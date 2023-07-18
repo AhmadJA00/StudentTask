@@ -17,8 +17,9 @@
     <style>
         .logo {
             width: 12%;
+            min-width: 90px;
+            max-width: 140px;
         }
-
 
 
         .textHeader {
@@ -28,12 +29,6 @@
         .bg {
             background-color: rgb(8, 116, 217);
             /* 27 150 211 */
-        }
-
-        @media (min-width: 768px) {
-            .news-input {
-                width: 50%;
-            }
         }
 
         .link-color {
@@ -67,7 +62,18 @@
             position: relative;
         }
 
+        @media (min-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+
+        }
+
+
         @media (max-width: 768px) {
+            .title {
+                font-size: 1.5rem;
+            }
 
             .Tabel-text {
                 font-size: 70%;
@@ -80,41 +86,44 @@
 
         @media (max-width: 500px) {
 
+            .title {
+                font-size: 1.2rem;
+            }
+
             .Tabel-text {
                 font-size: 60%;
             }
         }
-        }
     </style>
 </head>
 
-<div class="Backword">
-    <a href="/index.html" class="hyper text-light">
-        <i class="bi bi-arrow-left"></i>
-    </a>
-
-</div>
 
 <body class="bg-dark text-light">
+
+    <div class="Backword">
+        <a href="/index.html" class="hyper text-light">
+            <i class="bi bi-arrow-left"></i>
+        </a>
+    </div>
 
     <!-- header -->
     <div class="bg-dark">
         <section>
-            <!-- <button class="btn ms-5 mt-5 btn-primary"></button> -->
-            <img src="./white logo.png" class="logo rounded my-2 mx-auto d-block" alt="">
+            <img src="./white logo.png" class="logo rounded my-3 my-md-2 mx-auto d-block" alt="">
         </section>
-        <section class="text-center">
-            <p class="h2 pb-1">TechEye Company</p>
-            <p class="h4">Summer Traning 2022 - 2023</p>
+        <section class="text-center title">
+            <p class=" pb-1">TechEye Company</p>
+            <p class="">Summer Traning 2022 - 2023</p>
         </section>
     </div>
 
     <hr class="m-4">
 
-    <section class="" id="tasks">
-        <h2 class="text-center mb-4 textHeader">Second Week Tasks</h2>
-        <h3 class="text-center mb-4">Learn basic of web development, working with different display</h3>
-        <section>
+    <section class="title" id="tasks">
+        <p class="text-center mb-4 textHeader">Second Week Tasks</p>
+        <p class="text-center mb-4">Learn basic of web development, working with different display</p>
+
+        <section class="fs-4">
 
             <table class="table table-dark table-hover Tabel-text">
                 <thead>
@@ -170,25 +179,22 @@
                 </tbody>
             </table>
         </section>
+
     </section>
 
     <!-- Contact -->
-    <section class="pt-3">
-        <div class="row g-4">
-            <div class="col-md">
-                <h2 class="text-center mb-3">Contact Info</h2>
-                <ul class="list-group list-group-flush lead fs-4">
-                    <li class="list-group-item px-md-3 m-0 py-4 Contact-text">
-                        <span class="fw-bold "><i class="bi bi-geo-alt mx-2"></i>Main locatoin: </span>
-                        Erbil, Sultan Muzafar, Al-assadi Mall
-                    </li>
-                    <li class="list-group-item px-md-3 m-0 mx-0 py-4 Contact-text">
-                        <span class="fw-bold"><i class="bi bi-telephone mx-2"></i>Department Phone: </span> +965
-                        750 455 6825
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <section class="pt-5 Contact">
+        <h2 class="text-center mb-3">Contact Info</h2>
+        <ul class="list-group list-group-flush lead fs-4">
+            <li class="list-group-item py-3 py-md-4 Contact-text">
+                <span class="fw-bold "><i class="bi bi-geo-alt mx-2"></i>Main locatoin: </span>
+                Erbil, Sultan Muzafar, Al-assadi Mall
+            </li>
+            <li class="list-group-item py-3 py-md-4 Contact-text">
+                <span class="fw-bold"><i class="bi bi-telephone mx-2"></i>Department Phone: </span> +965
+                750 455 6825
+            </li>
+        </ul>
     </section>
     <!-- footer -->
     <footer class="bg-dark text-white text-center p-1 my-3 position-relative">

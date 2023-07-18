@@ -12,6 +12,8 @@
     <style>
         .logo {
             width: 12%;
+            min-width: 90px;
+            max-width: 140px;
         }
 
         .textHeader {
@@ -20,24 +22,6 @@
 
         .bg {
             background-color: rgb(8, 116, 217);
-        }
-
-        @media (max-width: 768px) {
-
-            .Tabel-text {
-                font-size: 70%;
-            }
-
-            .Contact-text {
-                font-size: 69%;
-            }
-        }
-
-        @media (max-width: 500px) {
-
-            .Tabel-text {
-                font-size: 60%;
-            }
         }
 
         .link-color {
@@ -50,38 +34,72 @@
             color: rgb(27, 150, 211);
             text-decoration: none;
         }
+
+        @media (min-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+
+        }
+
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1.5rem;
+            }
+
+            .Tabel-text {
+                font-size: 70%;
+            }
+
+            .Contact-text {
+                font-size: 69%;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .title {
+                font-size: 1.2rem;
+            }
+
+            .Tabel-text {
+                font-size: 60%;
+            }
+        }
+        }
     </style>
 </head>
 
 <body class="bg-dark text-light body">
 
-
     <!-- header -->
-    <div class="py-3 bg-dark">
+    <div class="bg-dark">
         <section>
-            <img src="./white logo.png" class="logo rounded my-2 mx-auto d-block" alt="">
+            <img src="./white logo.png" class="logo rounded my-3 my-md-2 mx-auto d-block" alt="">
         </section>
-        <section class="text-center">
-            <p class="h2 pb-1">TechEye Company</p>
-            <p class="h4">Summer Traning 2022 - 2023</p>
+        <section class="text-center title">
+            <p class="pb-1">TechEye Company</p>
+            <p class="">Summer Traning 2022 - 2023</p>
         </section>
     </div>
 
     <hr class="m-4">
-    <section>
-        <h2 class="text-center mb-4 textHeader">Tasks for each week</h2>
 
+    <section class="title">
+        <p class="text-center mb-4 textHeader">Tasks for each week</p>
         <!-- Table -->
-        <div class="mx-4 fs-4">
-            <table class="table table-dark Tabel-text table-hover">
-                <thead class="">
-                    <th>
-                        <span class="d-block d-sm-none">W</span>
-                        <span class="d-none d-sm-block">Weeks</span>
-                    </th>
-                    <th>
-                        <span class="">Descrtiption</span>
-                    </th>
+        <div class="fs-4">
+            <table class="table table-dark Tabel-text table-hover Tabel-text">
+                <thead>
+                    <tr>
+                        <th>
+                            <span class="d-block d-sm-none">W</span>
+                            <span class="d-none d-sm-block">Weeks</span>
+                        </th>
+                        <th rowspan="2">Descrtiption</th>
+
+                    </tr>
                 </thead>
                 <tbody class="">
                     <tr>
@@ -90,9 +108,8 @@
                             <span class="d-none d-sm-block">First</span>
                         </td>
                         <td class="py-3"><a href="./31780096366.html" class="link-light text-decoration-none">
-                                <span class=""><span class="link-color">Visit to </span>Learn basic of Web, and
-                                    fundamental of the UI/UX</span>
-                            </a>
+                                <span class=""><span class="link-color">Visit to </a> </span>Learn basic of Web, and
+                            fundamental of the UI/UX</span>
                         </td>
                     </tr>
                     <tr>
@@ -101,9 +118,9 @@
                             <span class="d-none d-sm-block">Second</span>
                         </td>
                         <td class="py-3"><a href="./42505238001.html" class="link-light text-decoration-none">
-                                <span class=""><span class="link-color">Visit to </span>Learn basic of web development,
-                                    working with different display</span>
-                            </a>
+                                <span class=""><span class="link-color">Visit to </a></span>Learn basic of web
+                            development,
+                            working with different display</span>
                         </td>
                     </tr>
                     <tr>
@@ -112,13 +129,12 @@
                             <span class="d-none d-sm-block">Third</span>
                         </td>
                         <td class="py-3"><a href="./67074431050.html" class="link-light text-decoration-none">
-                                <span class=""><span class="link-color">Visit to </span>Learn about CSS frameworks, more
-                                    improvment in responsive web pages</span>
-                            </a>
+                                <span class=""><span class="link-color">Visit to </a></span>Learn about CSS frameworks,
+                            more
+                            improvment in responsive web pages</span>
                         </td>
                     </tr>
                 </tbody>
-
             </table>
         </div>
     </section>
@@ -128,11 +144,11 @@
     <section class="pt-5 Contact">
         <h2 class="text-center mb-3">Contact Info</h2>
         <ul class="list-group list-group-flush lead fs-4">
-            <li class="list-group-item px-md-5 mx-md-3 mx-0 py-4 Contact-text">
+            <li class="list-group-item py-3 py-md-4 Contact-text">
                 <span class="fw-bold "><i class="bi bi-geo-alt mx-2"></i>Main locatoin: </span>
                 Erbil, Sultan Muzafar, Al-assadi Mall
             </li>
-            <li class="list-group-item px-md-5 mx-md-3 mx-0 py-4 Contact-text">
+            <li class="list-group-item py-3 py-md-4 Contact-text">
                 <span class="fw-bold"><i class="bi bi-telephone mx-2"></i>Department Phone: </span> +965
                 750 455 6825
             </li>
